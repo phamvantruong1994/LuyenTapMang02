@@ -1,0 +1,21 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var array = [];
+    for (var i = 0; i < 10; i++) {
+        array[i] = prompt('nhap mang o vi tri ' + i);
+    }
+    var regExp = /[^a-zA-Z][0-9]*/;
+    for (var i = 0; i < array.length; i++) {
+        if (regExp.test(array[i])) {
+            alert(' la ki tu so ' + array[i] + ' o vi tri ' + i);
+        }
+    }
+</script>
+</body>
+</html>

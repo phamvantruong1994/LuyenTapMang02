@@ -1,0 +1,22 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <title>Title</title>
+</head>
+<body>
+<script>
+    var str=prompt('Nhap chuoi vao');
+    var regExp=/[^0-9][A-Za-z]*/
+    var count=0;
+    for (var i=0;i<str.length;i++)
+    {
+        if(regExp.test(str[i]))
+        {
+            count++;
+        }
+    }
+    alert('co '+count+' trong chuoi');
+</script>
+</body>
+</html>
